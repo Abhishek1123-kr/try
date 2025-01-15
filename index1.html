@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="box2">
+                <div class="header">
+                    <h3
+                    class="sbold">Parul University
+                </h3>
+                <h3 id="hd1"class="sbold">Forgot Password ?</h3>
+                </div>
+                <div class="role">
+                    <div class="form-group">
+                        <select name="ddlLoginRole" id="ddlLoginRole" class="selectme" onchange="ChangeLoginRole()">
+        <option value="Staff">Staff</option>
+        <option value="Student">Student</option>
+    </select>
+                        <span id="rfvLoginRole" style="color:Red;display:none;">Select how do you want to login as</span>
+                        <div class="form-group1">
+                            <div class="input-icon">
+                                <i class="fa fa-envelope"></i>
+                                <input name="txtForgotpwd" type="text" id="txtForgotpwd" class="inputbox" autocomplete="off" placeholder="   Email" />
+                            </div>
+                            <span id="rfvForgotpwd" style="color:Red;display:none;">Enter Email</span>
+                            <span id="revForgotpwd" style="color:Red;display:none;">Please Enter Valid Email ID</span>
+                            <!-- submit button -->
+                            <div class="row">
+                                <div class="button">
+                                    <input type="button" name="lbSubmit" value="Submit" onclick="if (Page_ClientValidate(&#39;forgotPassword&#39;)){this.disabled=&#39;true&#39;;this.value=&#39;Please Wait.....&#39;};WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;lbSubmit&quot;, &quot;&quot;, true, &quot;forgotPassword&quot;, &quot;&quot;, false, true))" id="lbSubmit" class="btn green-haze " />
+                                    <!-- <input type="button" name="lblogin" value="Back to Login" id="lblogin"/> -->
+                                    <a id="lblogin" href="index.html "> Back to Login</a>
+                                    <div class="backlogin">
+                                    </div>
+                                    
+                                </div>
+                                <div class="line">
+                                    <h3>____________________________</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="logo">
+                    <img src="image.png" alt="">
+                </div>
+                <div class="txt">
+                    <div class="t1">
+                        <div class="col-md-12 text-center">
+                            &copy; Powered By GNWebSoft Pvt. Ltd.
+                        </div>
+                    </div>
+                    <div class="t2">
+                        <div class="col-md-12 font-grey-cascasde text-center">Please use Google Chrome for better experience</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
