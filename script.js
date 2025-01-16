@@ -1,46 +1,40 @@
-// Function to show/hide password
-function ShowPassword(checkbox, passwordField) {
-    if (checkbox.checked) {
-        passwordField.type = "text"; // Show password
+// Function to validate email format
+function isValidEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
+
+// Function to handle form submission
+function submitForm() {
+    const emailInput = document.getElementById('txtForgotpwd').value;
+    const emailError = document.getElementById('rfvForgotpwd');
+    const validEmailError = document.getElementById('revForgotpwd');
+
+    // Clear previous error messages
+    emailError.style.display = 'none';
+    validEmailError.style.display = 'none';
+
+    // Validate email
+    if (!emailInput) {
+        emailError.style.display = 'block'; // Show error if email is empty
+    } else if (!isValidEmail(emailInput)) {
+        validEmailError.style.display = 'block'; // Show error if email is invalid
     } else {
-        passwordField.type = "password"; // Hide password
+        // If valid, proceed with form submission (you can replace this with actual submission logic)
+        alert("Form submitted successfully!"); // Placeholder for actual submission logic
+        // Redirect to the next page (replace 'nextPage.html' with your actual page)
+        
     }
 }
-
-// Function to validate the login form
-function validateLoginForm(event) {
-    event.preventDefault(); // Prevent form submission
-
-    const username = document.getElementById("txtUsername").value;
-    const password = document.getElementById("txtPassword").value;
-    const role = document.querySelector('input[name="rblRole"]:checked').value;
-
-    // Simple validation
-    if (username === "") {
-        alert("Please enter your username.");
-        return;
-    }
-    if (password === "") {
-        alert("Please enter your password.");
-        return;
-    }
-
-    // If validation passes, you can proceed with form submission
-    alert(`Logging in as ${role} with username: ${username}`);
-    // Here you would typically send the data to the server
+function goToLogin() {
+    window.location.href = 'index1.html'; // Replace 'index1.html' with the actual login page URL
 }
 
-// Function to handle forgot password
-function forgotPassword() {
-    alert("Forgot Password functionality is not implemented yet.");
-}
+// Attach the function to the button's click event
+document.getElementById('lblogin').onclick = goToLogin;
 
-// Function to handle Google Sign-In
-function loginWithGoogle() {
-    alert("Google Sign-In functionality is not implemented yet.");
+// Function to handle role change if needed
+function ChangeLoginRole() {
+    // Logic to handle role change if needed
 }
-
-// Event listeners
-document.getElementById("btnLogin").addEventListener("click", validateLoginForm);
-document.getElementById("btnForgotPassword").addEventListener("click", forgotPassword);
-document.getElementById("btnLoginWithGoogle").addEventListener("click", loginWithGoogle);
+function 
