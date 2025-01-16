@@ -23,6 +23,7 @@ html,body{
     width: 100%;
     display: flex;
     justify-content: center;
+    position: absolute;
     
 }
 
@@ -33,8 +34,20 @@ html,body{
     max-height: 446px;
     display: flex;
     border-radius: 2%;
+    position: absolute;
     justify-content: center;
     margin-top: 60px;
+}
+.frame{
+    background: #3ea68a;
+    border:burlywood;
+    width: 370px;
+    max-height: 446px;
+    display: flex;
+    border-radius: 2%;
+    /* position: absolute; */
+    justify-content: center;
+    margin-top: 57px;
 }
 
 
@@ -42,7 +55,7 @@ html,body{
     /* display: flex; */
     justify-content: center;
     width: 87%;
-    height: 100%;
+    height: 443px;
     background: #ffffff;
 }
 
