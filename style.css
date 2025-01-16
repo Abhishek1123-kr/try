@@ -13,7 +13,7 @@ html,body{
     width: 100%;
 }
 .container{
-    background:rgb(232, 27, 27);
+    background:rgb(255, 255, 255);
     height: 100%;
     width: 100%;
     display: flex;
@@ -24,7 +24,7 @@ html,body{
 }
 
 .box1{
-    background: #000;
+    background: #ffffff;
     width: 67%;
     height: 100%;
     display: flex;
@@ -69,7 +69,7 @@ html,body{
 
 #imgFooterLogo{
     width: 100%;
-    background: #000;
+    background: #ffffff;
     border-radius: 5px;
 }
 .form-control {
@@ -168,7 +168,7 @@ html,body{
     display: flex;
     justify-content: center;
     width: 53%;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(201, 201, 201);
 }
 .text{
     background: #ffffff;
@@ -235,24 +235,25 @@ html,body{
     }
     .login-with-google-btn {
         border: .9px solid rgb(255, 255, 255);
-        background-color: #ffffff;
+        background-color:transparent;
         color: rgb(119, 119, 119); 
-        width: 100%;
+        /* width: %; */
         height:40px;
-        margin-left:300px;
+        margin-left:10px;
         font-weight: bold;
         cursor: pointer;
     }
     .responsive-image{
-        margin-right:-300px;
+        position: absolute;
+        border:1px solid #ffffff;
+        margin-left:-140px;
         
     }
     .google{
         margin-top: 10px;
-
         background: #ffffff;
-        width: 30%;
-        border: 1px solid rgb(199, 199, 199);
+        width: 25%;
+        border: 2px solid rgb(201, 201, 201);
     }
 
 }
