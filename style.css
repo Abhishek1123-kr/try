@@ -257,3 +257,28 @@ html,body{
     }
 
 }
+
+@media(max-width: 480px){
+    .login-with-google-btn {
+        border: .9px solid rgb(255, 255, 255);
+        background-color:transparent;
+        color: rgb(119, 119, 119); 
+        /* width: %; */
+        height:40px;
+        margin-left:20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .responsive-image{
+        position: absolute;
+        border:1px solid #ffffff;
+        margin-left:-130px;
+        
+    }
+    .google{
+        margin-top: 10px;
+        background: #ffffff;
+        width: 50%;
+        border: 2px solid rgb(201, 201, 201);
+    }
+}
