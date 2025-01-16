@@ -22,10 +22,10 @@ function submitForm() {
     } else {
         // If valid, proceed with form submission (you can replace this with actual submission logic)
         alert("Form submitted successfully!"); // Placeholder for actual submission logic
-        // Redirect to the next page (replace 'nextPage.html' with your actual page)
-        
+        // Redirect to the next page (replace 'nextPage.html' with your actual page) 
     }
 }
+
 // Function to redirect to the login page
 function goToLogin() {
     window.location.href = 'index1.html'; // Replace 'index1.html' with the actual login page URL
