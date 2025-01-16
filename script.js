@@ -26,6 +26,7 @@ function submitForm() {
         
     }
 }
+// Function to redirect to the login page
 function goToLogin() {
     window.location.href = 'index1.html'; // Replace 'index1.html' with the actual login page URL
 }
@@ -37,4 +38,3 @@ document.getElementById('lblogin').onclick = goToLogin;
 function ChangeLoginRole() {
     // Logic to handle role change if needed
 }
-function 
