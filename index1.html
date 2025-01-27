@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GNUMS | Parul University</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script1.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <img src="1.jpg" class=".responsive-img">
+        </div>
+        <div id="box2" class="box2">
+            <div id="box3">
+                <div class="login-content">
+                    <div style="text-align: -webkit-center;">
+                        <img src="image.png" id="imgFooterLogo">
+                    </div>
+                    
+                    <div id="divLogin" class="row">
+                        <div class="col-md-13">
+                            <div class="form-group">
+                                <label>
+                                    <span class="required bold">*</span> Role 
+                                </label>
+                                <br>
+                                <span id="rblRole">
+                                    <input id="rblRole_0" type="radio" name="rblRole" value="Staff" checked="checked" /><label for="rblRole_0"> Staff </label>
+                                    <input id="rblRole_1" type="radio" name="rblRole" value="Student" />  <label for="rblRole_1">   Student</label>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>
+                                    <br>
+                                    <span class="required bold">*</span>
+                                    Username
+                                    <!-- userbox -->
+                                </label>
+                                <br>
+                                <input name="txtUsername" maxlength="50" id="txtUsername" class="form-control resize-input" type="Username" autocomplete="off" placeholder="Mobile No. / Email / Staff Code" />
+                                <span id="rvtxtUsername" style="color:Red;display:none;">Enter Username / Mobile No. / Email</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <!-- pw -->
+                                <label>
+                                    <br>
+                                    <span class="required bold">*</span> Password
+                                    <span id="ucParentShowHelp_lblFieldHelp" class="btn btn-xs popovers btn-circle" data-trigger="hover" onclick="return false;" data-container="body" data-html="true" data-placement="top" data-content="Case Sensitive Password" style="background-color:#ffffff !important;color:#ff9292 !important;padding:0 5px !important;font-size:11px !important;cursor:default !important;">
+                                    <i class="fa fa-info"></i>
+                                    </span>
+
+                                </label>
+                                <!-- textbox for pw -->
+                                <br>
+                                <input name="txtPassword" maxlength="20" id="txtPassword" class="form-control resize-input" type="password" autocomplete="off" placeholder="Password" />
+                                <span id="rvtxtPassword" style="color:rgb(255, 255, 255);display:none;">Enter Password</span>
+                                </div>
+                                 <!-- showpw -->
+                                 <label class="mt-checkbox mt-checkbox-outline" style="margin-top: 0.5rem !important; display: block !important;">
+                                    <input type="checkbox" id="cbShowPassword" onchange='ShowPassword(this, txtPassword);' /> Show Password
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        
+                        <!-- button login.. -->
+                        <div class="col-md-12">
+                            <br>
+                            <input type="submit" name="btnLogin" value="Login" id="btnLogin" class="btn green-haze margin-top-10" />
+                            <input type="button" name="btnForgotPassword" value="Forgot Password" id="btnForgotPassword" class="btn red margin-top-10" onclick="forgotPassword()" />
+                        </div>
+                        <!-- Google button -->
+                        <br>
+                        <div class="google">
+                            
+                        <img src="g-logo.png" alt="Google Logo" class="responsive-image">
+                        <input type="submit" name="btnLoginWithGoogle" value="Sign in with Google" id="btnLoginWithGoogle" class="login-with-google-btn margin-top-10" />
+                        </div>
+                    
+                    
+                    <div class="row margin-top-20">
+                        <div class="text">
+                            <small>Please use Google Chrome for better experience</small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                             
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+        </div>
+    </div></div>
+    <script src="script.js"></script>
+</body>
+</html>
