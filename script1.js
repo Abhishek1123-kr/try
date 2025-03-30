@@ -41,6 +41,8 @@ function loginWithGoogle() {
 }
 
 // Event listeners
-document.getElementById("btnLogin").addEventListener("click", validateLoginForm);
-document.getElementById("btnForgotPassword").addEventListener("click", forgotPassword);
-document.getElementById("btnLoginWithGoogle").addEventListener("click", loginWithGoogle);
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("btnLogin").addEventListener("click", validateLoginForm);
+    document.getElementById("btnForgotPassword").addEventListener("click", forgotPassword);
+    document.getElementById("btnLoginWithGoogle").addEventListener("click", loginWithGoogle);
+});
